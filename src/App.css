@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightcoral;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #252728;
+  gap: 1px;
+  border-radius: 0.75rem;
+  -webkit-box-shadow: 0px 16px 34px -1px rgba(0,0,0,0.74); 
+  box-shadow: 0px 16px 34px -1px rgba(0,0,0,0.74);
+  overflow: hidden;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.navigation span {
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 1rem;
+}
+
+.close {
+  background-color: #ff5f57;
+}
+
+.minimize {
+  background-color: #fdbc2c;
+}
+
+.fullscreen {
+  background-color: #2bc840;
+}
+
+.buffer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  width: 240px;
+  color: #e9e9e9;
+  font-size: 3em;
+  font-weight: 200;
+  line-height: 1em;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 60px;
+  border: none;
+  color: #e9e9e9;
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.operators {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+}
+
+.operators button {
+  background-color: #383c40;
+}
+
+.operators button:active {
+  background-color: #646b73;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.numbers .row {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+}
+
+.numbers button {
+  background-color: #585c5f;
+}
+
+.numbers button:active {
+  background-color: #798084;
+}
+
+.zero {
+  width: 66.7%;
+}
+
+.signs {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.signs button {
+  background-color: #ff9e0b;
+}
+
+.signs button:active {
+  background-color: #cc7d06;
+}
